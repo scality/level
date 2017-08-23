@@ -33,9 +33,9 @@
   ],
   "main": "level.js",
   "dependencies": {
-    "level-packager": "^2.0.2",
-    "leveldown": "^3.0.0",
-    "opencollective": "^1.0.3"
+    "opencollective": "^1.0.3",
+    "level-packager": "scality/packager.git#scality/custom-env-destroy-repair",
+    "leveldown": "scality/leveldown.git#scality/custom-env"
   },
   "devDependencies": {
     "standard": "^11.0.0",
