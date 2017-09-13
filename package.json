@@ -34,7 +34,7 @@
   "main": "level.js",
   "dependencies": {
     "level-packager": "~1.2.0",
-    "leveldown": "git+ssh://git@github.com:scality/leveldown.git#ft/custom-env"
+    "leveldown": "scality/leveldown.git#ft/custom-env"
   },
   "devDependencies": {
     "tape": "^4.2.2"
