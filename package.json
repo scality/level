@@ -33,7 +33,7 @@
   ],
   "main": "level.js",
   "dependencies": {
-    "level-packager": "MathieuCassagne/packager.git#ft/custom-env-destroy-repair",
+    "level-packager": "scality/packager.git#ft/custom-env-destroy-repair",
     "leveldown": "scality/leveldown.git#ft/custom-env"
   },
   "devDependencies": {
