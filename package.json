@@ -1,28 +1,50 @@
 {
   "name": "level",
+  "version": "7.0.1",
   "description": "Fast & simple storage - a Node.js-style LevelDB wrapper (a convenience package bundling LevelUP & LevelDOWN)",
-  "version": "3.0.0",
-  "contributors": [
-    "Rod Vagg <r@va.gg> (https://github.com/rvagg)",
-    "John Chesley <john@chesl.es> (https://github.com/chesles/)",
-    "Jake Verbaten <raynos2@gmail.com> (https://github.com/raynos)",
-    "Dominic Tarr <dominic.tarr@gmail.com> (https://github.com/dominictarr)",
-    "Max Ogden <max@maxogden.com> (https://github.com/maxogden)",
-    "Lars-Magnus Skog <ralphtheninja@riseup.net> (https://github.com/ralphtheninja)",
-    "David Björklund <david.bjorklund@gmail.com> (https://github.com/kesla)",
-    "Julian Gruber <julian@juliangruber.com> (https://github.com/juliangruber)",
-    "Paolo Fragomeni <paolo@async.ly> (https://github.com/hij1nx)",
-    "Anton Whalley <anton.whalley@nearform.com> (https://github.com/No9)",
-    "Matteo Collina <matteo.collina@gmail.com> (https://github.com/mcollina)",
-    "Pedro Teixeira <pedro.teixeira@gmail.com> (https://github.com/pgte)",
-    "James Halliday <mail@substack.net> (https://github.com/substack)"
+  "license": "MIT",
+  "main": "level.js",
+  "scripts": {
+    "test": "standard && nyc node test.js",
+    "test-browsers-local": "airtap --verbose test-browser.js",
+    "coverage": "nyc report -r lcovonly",
+    "hallmark": "hallmark --fix",
+    "dependency-check": "dependency-check --no-dev . browser.js",
+    "prepublishOnly": "npm run dependency-check"
+  },
+  "files": [
+    "browser.js",
+    "level.js",
+    "CHANGELOG.md",
+    "UPGRADING.md"
   ],
+  "browser": "browser.js",
+  "dependencies": {
+    "level-js": "^6.1.0",
+    "level-packager": "^6.0.1",
+    "leveldown": "^6.1.0"
+  },
+  "devDependencies": {
+    "airtap": "^4.0.1",
+    "airtap-playwright": "^1.0.1",
+    "dependency-check": "^4.1.0",
+    "hallmark": "^4.0.0",
+    "nyc": "^15.0.0",
+    "standard": "^16.0.3",
+    "tape": "^5.0.1",
+    "uuid": "^8.3.2"
+  },
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/level"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Level/level.git"
   },
   "homepage": "https://github.com/Level/level",
   "keywords": [
+    "level",
     "leveldb",
     "stream",
     "database",
@@ -31,27 +53,7 @@
     "storage",
     "json"
   ],
-  "main": "level.js",
-  "dependencies": {
-    "level-packager": "^2.0.2",
-    "leveldown": "^3.0.0",
-    "opencollective": "^1.0.3"
-  },
-  "devDependencies": {
-    "standard": "^11.0.0",
-    "tape": "^4.2.2"
-  },
-  "scripts": {
-    "test": "standard && node test.js",
-    "postinstall": "opencollective postinstall"
-  },
   "engines": {
-    "node": ">=4"
-  },
-  "license": "MIT",
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/level",
-    "logo": "https://opencollective.com/level/logo.txt"
+    "node": ">=10.12.0"
   }
 }
