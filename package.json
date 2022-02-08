@@ -35,7 +35,7 @@
   "dependencies": {
     "opencollective": "^1.0.3",
     "level-packager": "scality/packager.git#scality/custom-env-destroy-repair",
-    "leveldown": "scality/leveldown.git#scality/custom-env"
+    "leveldown": "scality/leveldown.git#scality/custom-env-16"
   },
   "devDependencies": {
     "standard": "^11.0.0",
