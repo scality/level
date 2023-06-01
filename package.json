@@ -30,7 +30,7 @@
     "dependency-check": "^4.1.0",
     "hallmark": "^4.0.0",
     "nyc": "^15.0.0",
-    "standard": "^16.0.3",
+    "standard": "^17.1.0",
     "tape": "^5.0.1",
     "uuid": "^8.3.2"
   },
