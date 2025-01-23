@@ -22,7 +22,7 @@
   "dependencies": {
     "level-js": "^6.1.0",
     "level-packager": "^6.0.1",
-    "leveldown": "^6.1.0"
+    "leveldown": "^6.1.1"
   },
   "devDependencies": {
     "airtap": "^4.0.1",
